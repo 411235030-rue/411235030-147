@@ -19,8 +19,8 @@ public:
         if (count1 == count2) return true;
 
         for (int i = len; i < s2.size(); i++) {
-            count2[s2[i] - 'a']++;             // 新字元進來
-            count2[s2[i - len] - 'a']--;      // 舊字元出去
+            count2[s2[i] - 'a']++;            
+            count2[s2[i - len] - 'a']--;     
 
             if (count1 == count2) return true;
         }
